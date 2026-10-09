@@ -1,0 +1,36 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg);
+  /* The deep dark navy from your image */
+  color: var(--text);
+  /* Crisp white/gray text */
+  -webkit-font-smoothing: antialiased;
+}
+
+.dark-theme-layout {
+  min-height: 100vh;
+  background: var(--bg);
+  padding-bottom: 60px;
+}
+
+/* Makes the hero illustration float up and down */
+.floating-graphic {
+  animation: floatUpDown 4s ease-in-out infinite;
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.4));
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
